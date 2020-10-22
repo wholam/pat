@@ -11,3 +11,10 @@ string 字符对象
 
 
 
+#### q1011
+
+```C++
+#include<iomamip>//控制输入输入格式
+cout<<setprecision(4);//输入四位有效数字
+```
+
