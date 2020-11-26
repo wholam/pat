@@ -45,3 +45,122 @@ cout<<setiosflags(ios::fixed)<<setprecision(1);
 系数相乘相加后若为0，则应该删去。
 ```
 
+#### q1025
+
+
+
+#### q1084
+
+```c++
+#include<algorithm>
+
+transform(s.begin(),s.end(),s.begin(),::toupper);
+//将string类字符串转换为大写 ::tolower
+```
+
+
+
+
+
+
+
+## 算法初步
+
+### 排序 P87
+
+1. 冒泡排序
+2. 选择排序：分有序区和无序区，每趟从无序区中选出最小的放到有序区后面。算法复杂度O(n^2)。
+3. 插入排序：将无序区第一个元素在有序区中找到一个合适的位置插入
+
+C++中sort函数实现排序功能。
+
+```C++
+#include<algorithm>
+sort(首元素地址，尾元素地址的下一个地址，[比较函数]);
+//不写比较函数，默认递增
+
+bool cmp(int a,int b){
+    return a>b;//从大到小排序
+}
+
+bool cmp(node a, node b){
+    return a.x>b.x;//node为结构体
+}
+
+bool cmp(node a, node b){
+    if(a.x!=b.x) return a.x>b.x;
+    else return a.y<b.y;//先按x从大到小，再按y从小到大
+}
+
+```
+
+对于容器，sort函数只能用于vector、string、deque的排序。
+
+```C++
+sort(vi.begin(),vi.end(),cmp);
+```
+
+对应题目：
+
+![image-20201123212847475](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201123212847475.png)
+
+### 散列（hash）P128
+
+hash:将一个元素通过一个函数转化为整数，使该整数可以尽量唯一地代表该元素。
+
+```c++
+//key为整数
+除留余数法：H(key) = key % mod，mod最好为素数。
+
+避免冲突：
+1. 线性探查法
+2. 平方探查法
+3. 链地址法：将所有hash值相同地key连接成一条链表
+前两种方法都要寻找新的hash值。
+```
+
+```
+//key为字符串
+将A-Z视为0-25，每个字符串可以转换为1个整数作为它地hash值。
+```
+
+```C++
+//map用法
+#include<map>
+map<typename1,typename2> mp;
+map<char,int> mp;
+//通过下标访问
+mp['c']=20;
+mp['c']=30;
+//通过迭代器访问
+map<typename1,typename2>::iterator it;
+it->first;//访问key
+it->second;//访问值
+//map自动按照key从小到大的顺序排序。
+
+常用函数：
+1、find(key);//返回对应迭代器
+2、mp.erase(it or key);//删除单个元素
+   mp.erase(first,last);//last为末尾迭代器的下一个地址
+3、size()
+4、clear()
+```
+
+
+
+对应题目：
+
+![image-20201123212941118](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201123212941118.png)
+
+
+
+```matlab
+openExample('deeplearning_shared/EstimateBodyPoseUsingDeepLearningExample')
+```
+
+### 递归
+
+
+
+### 贪心 P148
+
