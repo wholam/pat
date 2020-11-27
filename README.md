@@ -102,7 +102,7 @@ sort(vi.begin(),vi.end(),cmp);
 
 对应题目：
 
-![image-20201123212847475](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201123212847475.png)
+![image-20201126182054450](https://i.loli.net/2020/11/26/m64BPciLpkUtTIC.png)
 
 ### 散列（hash）P128
 
@@ -150,13 +150,9 @@ it->second;//访问值
 
 对应题目：
 
-![image-20201123212941118](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201123212941118.png)
+![image-20201126184636406](https://i.loli.net/2020/11/26/DxeFJd4pgXUIkwV.png)
 
 
-
-```matlab
-openExample('deeplearning_shared/EstimateBodyPoseUsingDeepLearningExample')
-```
 
 ### 递归
 
@@ -164,3 +160,20 @@ openExample('deeplearning_shared/EstimateBodyPoseUsingDeepLearningExample')
 
 ### 贪心 P148
 
+
+
+求解最优化问题的一种方法，总是考虑在当前状态下局部最优（较优）策略，来使全局的结果达到最优（较优）。
+
+
+
+
+
+
+
+
+
+
+
+对应题目：
+
+![image-20201126184716940](https://i.loli.net/2020/11/26/3yNE2HPASkrndDW.png)
