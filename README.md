@@ -56,6 +56,9 @@ cout<<setiosflags(ios::fixed)<<setprecision(1);
 
 transform(s.begin(),s.end(),s.begin(),::toupper);
 //将string类字符串转换为大写 ::tolower
+
+#include<string>
+getline(cin,str);//获取带有空格的字符串
 ```
 
 
@@ -103,6 +106,8 @@ sort(vi.begin(),vi.end(),cmp);
 对应题目：
 
 ![image-20201126182054450](https://i.loli.net/2020/11/26/m64BPciLpkUtTIC.png)
+
+
 
 ### 散列（hash）P128
 
