@@ -350,9 +350,11 @@ ceil();
 
 ![image-20201207111727679](https://i.loli.net/2020/12/07/P623dUfAS9gymKu.png)
 
-### 最短路径
+### 最短路径 P364
 
 ![image-20201210113531712](https://i.loli.net/2020/12/10/U5MCtHJigDm2PXe.png)
+
+<img src="https://i.loli.net/2020/12/13/xwydTLgpK3HQ42z.png" alt="image-20201213232126079" style="zoom:80%;" />
 
 #### Dijkstra算法
 
@@ -381,7 +383,19 @@ q1003:
 
 可能有多条最短路径，可以用一个vector存放每个结点的前一个结点，再利用递归可以求得所有最短路径。
 
-q1030:
+q1018:
+
+注意：调整时只能够去的时候调整每个站点自行车数量，回来时不能调整，在计算携带和带回的自行车数量时要注意。要在DFS时动态改变backnum和sendnum。
+
+Dijkstra+DFS
+
+
 
 #### Floyd算法
+
+解决全源最短路径问题，可以求解任意两点之间的最短路径。
+
+![image-20201215233246720](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201215233246720.png)
+
+算法复杂度为O(n^3)
 
