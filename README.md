@@ -389,13 +389,11 @@ q1018:
 
 Dijkstra+DFS
 
-
-
 #### Floyd算法
 
 解决全源最短路径问题，可以求解任意两点之间的最短路径。
 
-![image-20201215233246720](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20201215233246720.png)
+![image-20201215233246720](https://i.loli.net/2020/12/19/5tZAgj8fMJEcwSk.png)
 
 算法复杂度为O(n^3)
 
