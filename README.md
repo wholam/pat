@@ -425,13 +425,28 @@ Dijkstra+DFS
 
 伪代码如下：
 
-![image-20201220205532023](https://i.loli.net/2020/12/20/SyMz9h6D3fNeOuQ.png)
+![image-20201220205532023](https://i.loli.net/2020/12/22/iwM6QkYHjJoRNFv.png)
 
 #### kruskal算法
 
 每次选择最小边权的边，如果边两端的顶点在不同的连通块中，就把这条边加入最小生成树中。
 
-![image-20201220210350700](https://i.loli.net/2020/12/20/xPK1CuDvtnSQ23d.png)
+![image-20201220210350700](https://i.loli.net/2020/12/22/nyv3CZMeKk8sS9Q.png)
 
 可以使用<strong>并查集</strong>来判断两个结点是否在同一个连通块中。
+
+
+
+## 链表
+
+![image-20201221182918589](https://i.loli.net/2020/12/22/rMbJfYTcNsQ8pLa.png)
+
+q1087:
+
+注意点：
+
+1. 最多有100000个结点，可以以空间换时间，开一个很大的数组。
+2. 可以利用map，stack来完成，所需空间少，但要耗费更多时间
+
+3. 输入的结点中可能有的不在待处理链表中，这点要注意。
 
