@@ -70,6 +70,16 @@ getline(cin,str);//获取带有空格的字符串
 1. 用string运算
 2. 用vector运算
 
+#### q1100
+
+string转整数：
+
+```
+string s;
+int n;
+n = atoi(s.c_str());
+```
+
 
 
 ## 算法初步
@@ -209,9 +219,41 @@ upper_bound(begin,end,num)：从数组的begin位置到end-1位置二分查找�
 
 ### two pointers P176
 
+![image-20210118174153478](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20210118174153478.png)
+
+#### 归并排序
+
+采用“分而治之”的思想。将待排序的数组逐步划分，排序后在归并。
+
+时间复杂度是O(nlogn)
+
+1. 递归写法
+2. 非递归写法
+
+#### 快速排序
+
+为第一个元素在整个待排序序列中找到一个位置，使得它左边的元素都不大于它，它右边的元素都小于它。然后递归处理左右子序列，这就是快速排序的原理。
+
+时间复杂度时O(nlogn)
+
+当序列接近有序时会达到最坏时间复杂度O(n2).解决的办法时随机选择主元。
+
+也就是在划分时随机选择一个数与第一个数交换。
+
+```c++
+//产生随机数
+#include<stdlib.h>
+#include<time.h>
+srand((unsigned)time(NULL));//初始化随机数种子
+rand();//产生随机数
+rand()%(b-a+1)+a;//产生[a,b]范围的随机数
+```
+
 
 
 ### 其它高级技巧与算法 P184
+
+![image-20210118174223250](C:\Users\luo15\AppData\Roaming\Typora\typora-user-images\image-20210118174223250.png)
 
 
 
